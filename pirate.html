@@ -1,11 +1,13 @@
 <h1>PIRATING morb PLZ WAIT...</h1>
-<progress id="file" value="1" max="5000000"></progress><p>Speed: 5 kbps</p>
+<div id="mob"><progress id="file" value="1" max="5000000"></progress><p>Speed: 5 kbps</p></div>
+
 <script>
     function morbIncrease(){
         document.getElementById("file").value += Math.floor(Math.random() * 1500);
         if (document.getElementById("file").value >5000000){
             alert("u just commited a felony lol");
             alert("click the button to load the morb player");
+            document.getElementById("mob").innerHTML = "";
         }
     }
     setInterval(morbIncrease,1);
