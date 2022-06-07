@@ -4,10 +4,10 @@
 <script>
     function morbIncrease(){
         document.getElementById("file").value += Math.floor(Math.random() * 1500);
-        if (document.getElementById("file").value > 400000){
+        if (document.getElementById("file").value > 499999){
             alert("u just commited a felony lol");
             alert("click the button to load the morb player");
-            document.getElementById("mob").innerHTML = "<img style='height:200px;' src='https://i.ytimg.com/vi/qvDxELH8Piw/maxresdefault.jpg'></img><br><button>WATCH MORB</button>";
+            document.getElementById("mob").innerHTML = "<img style='height:200px;' src='https://i.ytimg.com/vi/qvDxELH8Piw/maxresdefault.jpg'></img><br><br><button>WATCH MORB</button>";
         }
     }
     setInterval(morbIncrease,1);
